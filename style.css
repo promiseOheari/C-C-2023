@@ -1,0 +1,477 @@
+body{
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+    height: 100vh;
+    
+}
+body .home{
+       background-color: #f2f2f2;
+        }
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    max-width:100%;
+    margin: 0 auto;
+    padding:0 50px;
+    background-color: #07476a;
+    color:#fff;
+    font-size: 13px;
+    color:#e37252;    
+}
+
+.borgermenu{
+    display: none;
+}
+
+.topmenu{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.topmenu a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: #e37252;
+}
+
+.topmenu a:hover{
+    color: #fff;
+    font-size: 14px;
+    transition: 0.5sec ease-in-out;
+}
+
+marquee{
+    font-size: 23px;
+}
+
+marquee span{
+    color:#fff;
+    font-size: 20px;
+    margin-left:30px;
+}
+
+.navCC{
+font-size: 30px;
+font-family: 'Lobster', cursive;
+}
+
+.navCC a{
+text-decoration: none;
+cursor: pointer;
+color:#fff;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;  
+    text-align: center; 
+    height: 90vh;
+   
+}
+
+
+img{
+    width:70%;
+    height: 80vh;
+    border-radius:5px;
+    
+}
+
+.container h1{
+    font-size: 60px;
+    line-height: 20px;
+    color: #e37252;
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+}
+
+.cardtext{
+    width: 100%;
+}
+
+.cardtext h1:nth-child(2){
+    color: #07476a;
+    font-size: 40px;
+}
+
+.container h2{
+    font-size: 50px;
+    line-height: 20px;
+    color:#e37252;
+    
+}
+
+.container h3{
+    font-size: 30px;
+    line-height: 20px;
+    color: #07476a;
+  
+}
+
+.container:last-child{
+    order: 2;
+}
+
+
+.line{
+    width: 15%;
+    height:5px ;
+    background: #e5e5e5;
+    margin: 0 auto;
+}
+
+#chck{
+    display: none;
+}
+
+
+/*Rsvp*/
+
+body .backroundImg{
+    background-image: url(./photos/debby-hudson-jcc8sxK2Adw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:90vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color:#07476a;
+}
+
+.backroundImg{
+
+display: flex;
+flex-direction: column;
+padding-left: 20%;
+justify-content: center;
+
+
+}
+
+.backroundImg h1{
+font-size: 60px;
+line-height: 50px;
+}
+
+/*church Venue*/
+body .VenueImage{
+    background-image: url(./photos/WhatsApp\ Image\ 2023-02-01\ at\ 11.03.55\ AM.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    box-sizing: border-box;
+}
+
+
+.VenueImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.VenueImage h1{
+    color:gold;
+    font-size: 60px;
+    line-height: 20px;
+    }
+
+    /*reception*/
+    .reception{
+        background-image: url(./photos/WhatsApp\ Image\ 2023-02-01\ at\ 11.55.58\ AM.jpeg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 90vh;
+        box-sizing: border-box;
+      opacity: 80%;
+    }
+    .reception{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 18px;
+        }
+
+    .reception h2,h3{
+        color:greenyellow;
+        font-size: 40px;
+        }
+
+        /*photo*/
+
+        .galleryContainer{
+            max-width: 1400px;
+            height: 80vh;
+          row-gap: 30px;
+        }
+      
+     .gallery{
+            display: grid;
+            grid-template-columns: 5fr 5fr 5fr;
+           grid-row-gap:30px;
+            background-color: #fff;
+            width: 100%;
+            height: 100%;
+        
+          
+        }
+
+
+
+.gallery .long:hover{
+   scale: 1.1;
+   transition: 0.5sec ease-in-out;
+   overflow:hidden;
+
+}
+       
+       
+
+
+@media(max-width:600px){
+.borgermenu{
+    display: block;
+    font-size: 30px;
+}
+
+.cardtext{
+    order: 2;
+}
+
+
+.topmenu{
+    display: block;
+    top:-100%;
+    position: fixed;
+}
+
+ .topmenu a{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+    
+} 
+
+#chck:checked~ul{   
+    top:40px;
+}
+
+    nav{
+        height: 7vh;
+        padding:0 30px;  
+    }
+    
+    marquee{
+       display: none;
+    }
+    
+    .container{
+        grid-template-columns: 1fr;
+        height: 93vh;
+    }
+
+    img{
+        width:90%;
+        height: 50vh;
+        border-radius:10px;   
+    }
+    
+    .container h1{
+        font-size: 30px;
+        color: #e37252;
+        font-weight: 600;
+        line-height: 18px;  
+    }
+    
+    .cardtext h1:nth-child(2){
+        color: #fff;
+        font-size: 30px;
+        color: #07476a;
+    }
+    
+    .container h2{
+        font-size: 30px;
+        line-height: 15px;
+        color:#e37252;
+        
+    }
+    
+    .container h3{
+        font-size: 20px;
+        line-height: 15px;
+        color: #07476a;
+      
+    }
+    
+    .container:last-child{
+        order: 1;
+    }
+    
+    .line{
+      display: none;   
+    }
+    
+
+    
+    /*Rsvp*/
+    body .backroundImg{
+        height: 93vh;
+    }
+    
+    .backroundImg{
+    padding: 10px 30px ;
+    
+    }
+    
+    .backroundImg h1{
+    font-size: 40px;
+    line-height: 30px;
+    }
+    
+    /*church Venue*/
+    body .VenueImage{
+        height: 93vh;
+    }
+    
+
+    .VenueImage h1{
+        font-size: 40px;
+        line-height: 40px;
+        }
+    
+        /*reception*/
+        .reception{
+            height: 93vh;
+        
+        }
+    
+        .reception h2{  
+            font-size: 40px;
+           line-height: 40px;
+            }
+  
+        .reception h3{
+            font-size: 25px;
+            color: goldenrod;
+           
+            }
+    
+            /*photo*/
+          
+            .gallery{
+                grid-template-columns: 1fr;
+               grid-row-gap:30px;
+               width: 90%;
+               margin:10px auto ;
+            }
+    
+        }   
+        
+        
+    /*nav{
+        height: 60px;
+        max-width:100%;
+        background-color: #e5e5e5;
+        color:#fff;
+        padding:0 20px;
+        font-size: 13px;
+        
+    }
+    #chck:checked ~ .topmenu{
+        display:block
+    }
+    
+
+    .topmenu ul a{
+        display: block;
+        padding-left: 20px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .topmenu{
+        
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left:10;
+        margin-right: 10px;
+        margin-top: 40px;
+        gap: 0px;
+    }
+.container .HomePhoto{
+    order: 1;
+}
+    .borgermenu{
+        display: block;
+        font-size: 30px;
+    }
+
+    .topmenu{
+        display:none;
+    }
+
+.container{
+    grid-template-columns: 1fr;
+}
+
+img{
+    background-color: red;
+    width:70%
+}
+
+
+.container h1{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px; 
+}
+
+.container h2{
+    font-size: 30px;
+    line-height: 20px;
+    
+}
+
+.container h3{
+    font-size: 20px;
+    line-height: 20px;
+    color: #e5e5e5;
+  
+}
+
+
+.line{
+    width: 15%;
+    height:5px ;
+    background: #e5e5e5;
+    margin-top: 10px;  
+}
+}
