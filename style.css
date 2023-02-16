@@ -6,7 +6,11 @@ body {
     font-size: 62.5%;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+   max-width: 1500px;
 
+}
+.home{
+    height: 100vh;
 }
 
 body .home {
@@ -81,24 +85,26 @@ marquee span {
     justify-content: center;
     text-align: center;
     height: 90vh;
+    width: 100%;
 }
 
 .fa-face-smile {
     color: #e37252;
-    padding: 0 10px;
+    padding-left: 10px;
 }
 
 
-img {
+.container img {
     width: 70%;
-    height: 80vh;
+    /* height: 80vh; */
     border-radius: 5px;
+   
 
 }
 
 .container h1 {
     font-size: 60px;
-    line-height: 20px;
+    line-height: 0;
     color: #e37252;
     font-family: 'Lobster', cursive;
     font-weight: 300;
@@ -106,6 +112,11 @@ img {
 
 .cardtext {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .cardtext h1:nth-child(2) {
@@ -222,12 +233,20 @@ body .VenueImage {
 
 }
 
-.reception h2,
-h3 {
-    color: whitesmoke;
+.reception h2{
     font-size: 40px;
-    z-index: 3;
 }
+
+.reception span {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.reception span:last-child {
+    font-size: 30px;
+}
+
+
 
 /*photo*/
 
@@ -260,39 +279,10 @@ h3 {
 }
 
 
-
-
-/* .galleryContainer{
-            max-width: 1400px;
-            height: 80vh;
-          row-gap: 30px;
-        }
-      
-     .gallery{
-            display: grid;
-            grid-template-columns: 5fr 5fr 5fr;
-           grid-row-gap:30px;
-            background-color: #fff;
-            width: 100%;
-            height: 100%;
-        
-          
-        }
-
-
-
-.gallery .long:hover{
-   scale: 1.1;
-   transition: 0.5sec ease-in-out;
-   overflow:hidden;
-
-} */
-
 /* TIMER STYLINGS */
 .countdownContainer {
     display: flex;
     align-items: center;
-
     justify-content: space-between;
     width: 50%;
     /* background-color: red; */
@@ -305,6 +295,11 @@ h3 {
     height: 60px;
     width: 50px;
     border-radius: 10px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
 }
 
 .time h2 {
@@ -320,8 +315,29 @@ h3 {
 
 
 
-@media(max-width:600px) {
+@media(max-width:700px) {
 
+   /* TIMER STYLINGS */
+.countdownContainer {
+    width: 80%;
+}
+
+.time {
+    padding: 10px;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+#minutes, #hours, #days, #seconds {
+    color: #fff;
+    font-size: 16px;
+}
+
+.time span {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
 
 
     .borgermenu {
@@ -375,7 +391,7 @@ h3 {
         align-items: center;
         text-align: center;
         height: 7vh;
-        padding: 0 30px;
+        padding: 0 0px;
     }
 
 
@@ -385,12 +401,12 @@ h3 {
 
     .container {
         grid-template-columns: 1fr;
-        height: 93vh;
+        height: 90vh;
     }
 
-    img {
-        width: 90%;
-        height: 50vh;
+    .container img {
+         width: 90%;
+         height: 50vh; 
         border-radius: 10px;
     }
 
@@ -398,8 +414,8 @@ h3 {
         font-size: 30px;
         color: #e37252;
         font-weight: 600;
-        line-height: 18px;
-    }
+        line-height:0 px;
+    }   
 
     .cardtext h1:nth-child(2) {
         color: #fff;
@@ -462,19 +478,24 @@ h3 {
     /*reception*/
     .reception {
         height: 93vh;
-
     }
 
-    .reception h2 {
+
+    .reception h2{
         font-size: 25px;
         line-height: 40px;
-
     }
-
-    .reception h3 {
-        font-size: 25px;
-        line-height: 1px;
+    
+    .reception span {
+        font-size: 27px;
+        line-height: 40px;
+        font-weight: bold;
     }
+    
+    .reception span:last-child {
+        font-size: 23px;
+    }
+    
 
 
     /*photo*/
