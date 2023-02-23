@@ -314,6 +314,9 @@ body .VenueImage {
     color: #e37252;
 }
 
+.nextLine {
+    font-size: 50px;
+}
 
 
 @media(max-width:700px) {
@@ -321,6 +324,10 @@ body .VenueImage {
     /* TIMER STYLINGS */
     .countdownContainer {
         width: 80%;
+    }
+
+    .nextLine {
+        font-size: 40px;
     }
 
     .HomePhoto {
